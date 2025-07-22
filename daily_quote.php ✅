@@ -1,21 +1,8 @@
 <?php
 /**
- * Plugin Name: Daily Quote Shortcode
- * Description: Displays a random quote using the [daily_quote] shortcode.
+ * Plugin Name: WordPress Quotes Shortcode
+ * Description: Displays a random motivational quote via shortcode from an API.
  * Version: 1.0
  * Author: Shailaja Poojari
+ * License: GPLv2 or later
  */
-
-function my_quotes_shortcode() {
-    $response = wp_remote_get('https://api.quotable.io/random');
-    if (is_wp_error($response)) {
-        return 'Quote unavailable.';
-    }
-
-    $data = json_decode(wp_remote_retrieve_body($response));
-    $quote = $data->content ?? 'Default quote';
-    $author = $data->author ?? 'Unknown';
-
-    return "<div class='quote-box'>\"{$quote}\" - {$author}</div>";
-}
-add_shortcode('daily_quote', 'my_quotes_shortcode');
