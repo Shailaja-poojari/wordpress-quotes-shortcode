@@ -15,17 +15,13 @@
 3. Activate via WordPress Admin > Plugins
 4. Add `[daily_quote]` to any post/page/block
 
-##  Shortcode Output
 
-```html
-<div class='quote-box'>"Believe in yourself" - Unknown</div>
-
-Tech Stack 
+## Tech Stack 
 PHP
 HTML/CSS
 WordPress Plugin API
 
-Learning Outcome
+## Learning Outcome
 This plugin was built as part of learning WordPress development and plugin architecture. More enhancements coming soon!
 
 ##  Debug Thread
@@ -34,3 +30,10 @@ Check this [Stack Overflow post](https://stackoverflow.com/q/79053942) for the i
 ## ✨ Author
 Shailaja Poojary – [WordPress Profile](https://profiles.wordpress.org/shailajapoojary)
 GitHub: https://github.com/Shailaja-poojari/wordpress-quotes-shortcode
+
+
+##  Shortcode Output
+
+```html
+<div class='quote-box'>"Believe in yourself" - Unknown</div>
+
